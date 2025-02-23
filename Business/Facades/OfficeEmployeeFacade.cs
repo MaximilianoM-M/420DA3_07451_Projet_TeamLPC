@@ -15,6 +15,7 @@ internal class OfficeEmployeeFacade : AbstractFacade {
     private ShipmentOrderService ShipmentOrderService { get; set; }
     private AdresseService AdresseService { get; set; }
     private EntrepotService EntrepotService { get; set; }
+    private UtilisateurService UtilisateurService { get; set; }
 
     /// <summary>
     /// Constructeur
@@ -29,6 +30,7 @@ internal class OfficeEmployeeFacade : AbstractFacade {
         this.EmployeBureauMainMenu = new EmployeBureauMainMenu(this);
         this.AdresseService = new AdresseService(this, this.facadecontext);
         this.EntrepotService = new EntrepotService(this, this.facadecontext);
+        this.UtilisateurService = new UtilisateurService(this,this.facadecontext);     
 
     }
 
