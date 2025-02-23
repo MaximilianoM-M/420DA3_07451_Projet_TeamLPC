@@ -1,0 +1,27 @@
+{
+  "profiles": {
+    "420DA3_07451_Projet_Initial": {
+      "commandName": "Project"
+    },
+    "ProfTests": {
+      "commandName": "Project",
+      "commandLineArgs": "-profTests"
+    },
+    "OlivierTests": {
+      "commandName": "Project",
+      "commandLineArgs": "-olivierTests"
+    },
+    "FilipeTests": {
+      "commandName": "Project",
+      "commandLineArgs": "-filipeTests"
+    },
+    "MouhamedTests": {
+      "commandName": "Project",
+      "commandLineArgs": "-mouhamedTests"
+    },
+    "MaximilianoTests": {
+      "commandName": "Project",
+      "commandLineArgs": "-maximilianoTests"
+    }
+  }
+}
