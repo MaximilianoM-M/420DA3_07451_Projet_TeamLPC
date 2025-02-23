@@ -80,7 +80,7 @@ public class ClientsDTO : AbstractDTO<int> {
     /// <param name="telephone"></param>
     /// <returns></returns>
     public static bool ValiderTelephoneClient(long telephone) {
-        return telephone <= TELEPHONE_MAX_LENGTH;
+        return !(telephone < long.MinValue || telephone > long.MaxValue);
     }
     /// <summary>
     /// Validation de la longueur du Courriel Client
