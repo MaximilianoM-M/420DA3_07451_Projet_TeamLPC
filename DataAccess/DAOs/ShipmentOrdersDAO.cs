@@ -31,7 +31,7 @@ public class ShipmentOrdersDAO : AbstractDao<ShipmentOrderDTO, int> {
             .Include(so => so.EntrepotOriginal)
             .Include(so => so.EmployeEntrepot)
             .Include(so => so.AssociationsProduits)
-                .ThenInclude(sop => sop.ShipmentOrderDTO)
+                .ThenInclude(sop => sop.Produit)
             .Include(so => so.Shipment)
             .ToList();
     }
