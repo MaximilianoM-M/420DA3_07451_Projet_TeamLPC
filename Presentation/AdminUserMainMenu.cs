@@ -14,6 +14,10 @@ internal partial class AdminUserMainMenu : Form {
         this.ReloadEntrepotComboBox();
     }
 
+    private void QuitButton_Click(object sender, EventArgs e) {
+        this.facade.ExitApplication();
+    }
+
 
     #region Section Utilisateurs
 
@@ -496,13 +500,6 @@ internal partial class AdminUserMainMenu : Form {
     #endregion
 
     #region Clients
-    private void QuitButton_Click(object sender, EventArgs e) {
-        this.facade.ExitApplication();
-    }
-
-    private void Clientpanel4_Paint(object sender, PaintEventArgs e) {
-
-    }
 
     private void CreateClientbutton1_Click(object sender, EventArgs e) {
         _ = this.facade.GetService<ClientService>().CreateNewDtoInstance();
@@ -513,7 +510,16 @@ internal partial class AdminUserMainMenu : Form {
     }
 
     private void ClientslistBox1_SelectedIndexChanged(object sender, EventArgs e) {
-
+        ClientsDTO? selectedClient = this.ClientslistBox1.SelectedItem as ClientsDTO;
+        if (selectedClient is ClientsDTO) {
+            this.viewClientbutton1.Enabled = true;
+            this.editClientbutton.Enabled = true;
+            this.deleteClientButton.Enabled = true;
+        } else {
+            this.viewClientbutton1.Enabled = false;
+            this.editClientbutton.Enabled = false;
+            this.deleteClientButton.Enabled = false;
+        }
     }
 
     private void ViewClientbutton1_Click(object sender, EventArgs e) {

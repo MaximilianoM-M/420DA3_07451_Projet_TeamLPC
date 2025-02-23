@@ -57,7 +57,7 @@ partial class AdminUserMainMenu {
         this.createUserButton = new Button();
         this.userLabel = new Label();
         this.Clientpanel4 = new Panel();
-        this.deletebutton = new Button();
+        this.deleteClientButton = new Button();
         this.editClientbutton = new Button();
         this.viewClientbutton1 = new Button();
         this.ClientslistBox1 = new ListBox();
@@ -527,7 +527,7 @@ partial class AdminUserMainMenu {
         // 
         // Clientpanel4
         // 
-        this.Clientpanel4.Controls.Add(this.deletebutton);
+        this.Clientpanel4.Controls.Add(this.deleteClientButton);
         this.Clientpanel4.Controls.Add(this.editClientbutton);
         this.Clientpanel4.Controls.Add(this.viewClientbutton1);
         this.Clientpanel4.Controls.Add(this.ClientslistBox1);
@@ -542,17 +542,17 @@ partial class AdminUserMainMenu {
         this.Clientpanel4.Size = new Size(230, 362);
         this.Clientpanel4.TabIndex = 4;
         // 
-        // deletebutton
+        // deleteClientButton
         // 
-        this.deletebutton.Dock = DockStyle.Top;
-        this.deletebutton.Enabled = false;
-        this.deletebutton.Location = new Point(10, 275);
-        this.deletebutton.Name = "deletebutton";
-        this.deletebutton.Size = new Size(210, 26);
-        this.deletebutton.TabIndex = 9;
-        this.deletebutton.Text = "Supprimer client";
-        this.deletebutton.UseVisualStyleBackColor = true;
-        this.deletebutton.Click += this.DeleteClientButton_Click;
+        this.deleteClientButton.Dock = DockStyle.Top;
+        this.deleteClientButton.Enabled = false;
+        this.deleteClientButton.Location = new Point(10, 275);
+        this.deleteClientButton.Name = "deleteClientButton";
+        this.deleteClientButton.Size = new Size(210, 26);
+        this.deleteClientButton.TabIndex = 9;
+        this.deleteClientButton.Text = "Supprimer client";
+        this.deleteClientButton.UseVisualStyleBackColor = true;
+        this.deleteClientButton.Click += this.DeleteClientButton_Click;
         // 
         // editClientbutton
         // 
@@ -1136,7 +1136,7 @@ partial class AdminUserMainMenu {
     private Panel Clientpanel4;
     private Button createClientbutton1;
     private Label label2;
-    private Button deletebutton;
+    private Button deleteClientButton;
     private Button editClientbutton;
     private Button viewClientbutton1;
     private ListBox ClientslistBox1;
