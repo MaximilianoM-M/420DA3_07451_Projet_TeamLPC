@@ -155,6 +155,7 @@ partial class ClientWindows {
         this.createAddressButton.TabIndex = 14;
         this.createAddressButton.Text = "+";
         this.createAddressButton.UseVisualStyleBackColor = true;
+        this.createAddressButton.Click += this.CreateAddressButton_Click;
         // 
         // adresseClientcomboBox1
         // 
@@ -226,7 +227,7 @@ partial class ClientWindows {
         this.telephonelabel1.Dock = DockStyle.Top;
         this.telephonelabel1.Location = new Point(25, 139);
         this.telephonelabel1.Name = "telephonelabel1";
-        this.telephonelabel1.Size = new Size(61, 15);
+        this.telephonelabel1.Size = new Size(62, 15);
         this.telephonelabel1.TabIndex = 6;
         this.telephonelabel1.Text = "Telephone";
         // 

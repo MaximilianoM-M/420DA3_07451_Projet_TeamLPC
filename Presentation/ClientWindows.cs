@@ -181,7 +181,10 @@ public partial class ClientWindows : Form, IDtoManagementView<ClientsDTO> {
     }
 
     private void Quitbutton1_Click(object sender, EventArgs e) {
-        this.facade.ShutdownParentApplication();
+        // Oy! don't close the program when closing a modal window!
+        // not-smart...
+        // this.facade.ShutdownParentApplication();
+        this.DialogResult = DialogResult.Cancel;
     }
 
     /// <summary>
